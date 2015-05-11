@@ -1,131 +1,138 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Résumé</title>
+  	<meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="resume.css"></link>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:600,700' rel='stylesheet' type='text/css'>
+    <title>My Résumé</title>
   </head>
   <body>
-    <p>Updated 2015-05-10</p>
     <h1>Jonathan Price</h1>
+    <ul id="info">
+      <li id="address">902 S. Sheridan Apt. B, Kirksville, MO 63501</li>
+      <li id="contact">619-500-3005 | jmp3748@truman.edu</li>
+    </ul>
     
     <h2>Education</h2>
-    <section>
-      <p>Bachelors of Science in Computer Science, Truman State University; Kirksville, Missouri</p>
-      <p>Expected Graduation Date: May 2016</p>
-      <p>GPA: 3.3 / 4.0</p>
-    </section>
-
+    <ul>
+      <li>Bachelors of Science in Computer Science, Truman State University; Kirksville, Missouri</li>
+      <li>Expected Graduation Date: May 2016</li>
+      <li>GPA: 3.3 / 4.0</li>
+    </ul>
+    
     <h2>Work Experience</h2>
     <section>
-      <p class="job">
-        <span class="title">Research Assistant</span> 
-        <span class="company">Center for Geospatial Intelligence, University of Missouri, Columbia</span>
-        <span class="dates">August 2014 - Dec 2014</span>
-        <ul class="description">
+      <ul class="job">
+        <li class="title">Research Assistant</li>
+        <li class="dates">August 2014 - Dec 2014</li>
+        <li class="company">Center for Geospatial Intelligence, University of Missouri, Columbia</li>
+        <li><ul class="description">
           <li>NSF CAREER Grant: Supervised Learning for Incomplete and Uncertain Data</li>
           <li>Developing web application to crowdsource collection of labels for multispectral satellite imagery.</li>
-        </ul>
-      </p>
-      <p class="job">
-        <span class="title">Biocomplexity and High-Performance Computing Research Intern</span>
-        <span class="company">Division of Biological Sciences, University of Missouri, Columbia</span>
-        <span class="dates">June 2014 - July 2014</span>
-        <ul class="description">
+        </ul></li>
+      </ul>
+
+      <ul class="job">
+        <li class="title">Research Intern</li>
+        <li class="dates">June 2014 - July 2014</li>
+        <li class="company">Biocomplexity and High-Performance Computing REU, 
+          Division of Biological Sciences, University of Missouri, Columbia</li>
+        <li><ul class="description">
           <li>Used computational methods to research biomedical questions.</li>
           <li>Participated in week-long intensive training in bioinformatics.</li>
           <li>Attended seminars on faculty research  and research methodology.</li>
           <li>Studied phylogeny of grasses in tribe Paniceae.</li>
           <li>Made and presented poster.</li>
-        </ul>
-      </p>
-      <p class="job">
-        <span class="title">Research Fellow</span>
-        <span class="company">Informatics Institute, University of Missouri, Columbia</span>
-        <span class="dates">June 2013 - August 2014</span>
-        <ul class="description">
+        </ul></li>
+      </ul>
+      
+      <ul class="job">
+        <li class="title">Research Fellow</li>
+        <li class="dates">June 2013 - August 2014</li>
+        <li class="company">Informatics Institute, University of Missouri, Columbia</li>
+        <li><ul class="description">
           <li>Used computational methods to research biomedical questions.</li>
           <li>Research focus included</li>
           <li>Supervised Machine Learning, </li>
           <li>Dynamic networks, </li>
           <li>Protein-Protein interactions</li>
-        </ul>
-      </p>
-      <p class="job">
-        <span class="title">Math Tutor</span>
-        <span class="company">San Diego City College, San Diego, CA</span>
-        <span class="dates">January 2012 - May 2012</span>
-        <ul class="description">
+        </ul></li>
+      </ul>
+
+      <ul class="job">
+        <li class="title">Math Tutor</li>
+        <li class="dates">January 2012 - May 2012</li>
+        <li class="company">San Diego City College, San Diego, CA</li>
+        <li><ul class="description">
           <li>Provided one-on-one and group tutoring.</li>
           <li>Tutored remedial and college level math (up through Calculus II).</li>
           <li>Supplemental Instruction Tutor</li>
           <li>Proctored exams and helped students during classwork period.</li>
           <li>Graded homework and in-class assignments.</li>
           <li>Organized and lead study groups.</li>
-        </ul>
-      </p>
+        </ul></il>
+      </ul>      
     </section>
 
     <h2>Other Skills</h2>
-    <section>
-      <ul>
-        <li>
-          <h3>Computing</h3>
-          <ul>
-            <li>Git &amp; Collaborative development</li>
-            <li>Bash scripting</li>
-            <li>Regular Expressions and Unix parsing utilities (sed, awk, grep)</li>
-            <li>Web design (HTML, CSS, SVG, PHP, JavaScript).</li>
-            <li>JQuery and AngularJS Javascript frameworks</li>
-            <li>SQL (PostgreSQL and PostGIS)</li>
-            <li>C/C++ programming.</li>
-            <li>Object-oriented and GUI programming with Java.</li>
-            <li>Scripting with Python, Ruby, and Perl</li>
-            <li>Basic statistics with R</li>
-            <li>Markup &amp; Data serialization formats: JSON, XML, YAML</li>
-            <li>Unix &amp; Linux (command line operations, installation, administration).</li>
-            <li>Data recovery, partitioning, drive cloning.</li>
-            <li>Computer building, maintenance, and repair.</li>
-          </ul>
-        </li>
-        <li>
-          <h3>Research</h3>
-          <ul>
-            <li>Data Analysis</li>
-            <li>Bioinformatics &amp; Computational Biology</li>
-            <li>Network Science</li>
-            <li>Supervised Machine Learning</li>
-            <li>Geographic Information Systems</li>
-          </ul>
-        </li>
-      </ul>
-    </section>
-
+    <ul class="fields">
+      <li>
+        <h3>Computing</h3>
+        <ul>
+          <li>Git &amp; Collaborative development</li>
+          <li>Bash scripting</li>
+          <li>Regular Expressions and Unix parsing utilities (sed, awk, grep)</li>
+          <li>Web design (HTML, CSS, SVG, PHP, JavaScript).</li>
+          <li>JQuery and AngularJS Javascript frameworks</li>
+          <li>SQL (PostgreSQL and PostGIS)</li>
+          <li>C/C++ programming.</li>
+          <li>Object-oriented and GUI programming with Java.</li>
+          <li>Scripting with Python, Ruby, and Perl</li>
+          <li>Basic statistics with R</li>
+          <li>Markup &amp; Data serialization formats: JSON, XML, YAML</li>
+          <li>Unix &amp; Linux (command line operations, installation, administration).</li>
+          <li>Data recovery, partitioning, drive cloning.</li>
+          <li>Computer building, maintenance, and repair.</li>
+        </ul>
+      </li>
+      <li>
+        <h3>Research</h3>
+    	  <ul>
+    	    <li>Data Analysis</li>
+    	    <li>Bioinformatics &amp; Computational Biology</li>
+    	    <li>Network Science</li>
+    	    <li>Supervised Machine Learning</li>
+    	    <li>Geographic Information Systems</li>
+    	  </ul>
+      </li>
+    </ul>
+    
     <h2>Classes Taken</h2>
-    <section>
-      <ul>
-        <li>
-          <h3>Computer Science</h3>
-          <ul>
-            <li>Supervised Learning (graduate level, audited)</li>
-            <li>Database</li>
-            <li>Software Engineering</li>
-            <li>Data Structures and Algorithms I &amp; II (with the C programming language)</li>
-            <li>Compilers</li>
-            <li>Digital Logic</li>
-            <li>Discrete Structures for Computer Science</li>
-            <li>Web programming (in progress)</li>
-            <li>Systems programming (in progress)</li>
-            <li>Object-Oriented Programming (in progress)</li>
-            <li>Models of Computation (including logic programming in Prolog) (in progress)</li>
-          </ul>
-        </li>
-        <li>
-          <h3>Math</h3>
-          <ul>
-            <li>Calculus I-III</li>
-            <li>Linear Algebra</li>
-          </ul>
-        </li>
-      </ul>
-    </section>
+    <ul class="fields">
+      <li>
+      <h3>Computer Science</h3>
+        <ul class="classes">
+          <li>Supervised Learning (graduate level, audited)</li>
+          <li>Database</li>
+          <li>Software Engineering</li>
+          <li>Data Structures and Algorithms I &amp; II (with the C programming language)</li>
+          <li>Compilers</li>
+          <li>Digital Logic</li>
+          <li>Discrete Structures for Computer Science</li>
+          <li>Web programming</li>
+          <li>Systems programming</li>
+          <li>Object-Oriented Programming</li>
+          <li>Models of Computation (including logic programming in Prolog)</li>
+        </ul>
+      </li>
+      <li>
+      <h3>Math</h3>
+        <ul class="classes">
+          <li>Calculus I-III</li>
+          <li>Linear Algebra</li>
+        </ul>
+      </li>
+    <ul>
+    <p id="updated">Updated 2015-05-10</p>
   </body>
 </html>
