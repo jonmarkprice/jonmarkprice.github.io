@@ -1,5 +1,8 @@
+* {
+	font-size: 95%;	
+}
+
 body {
-	font-size: 0.8em;
 	font-family: sans-serif;
 	color: #333;
 }
