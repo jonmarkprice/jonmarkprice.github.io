@@ -1,0 +1,29 @@
+h2 + ul, ul.job, #info {
+	list-style-type: none;
+}
+
+ul li ul {
+	list-style-type: disc;
+	padding-left: 2em;
+}
+
+#awards li {
+  list-style-type: disc;
+}
+
+#contact, .title {
+	display: inline;
+}
+
+h1, #info, #updated {
+	text-align: center
+}
+
+.company {
+	font-style: italic;
+}
+
+.dates {
+	display: inline;
+	padding-left: 1em;
+}
