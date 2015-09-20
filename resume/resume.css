@@ -45,3 +45,7 @@ h1, h2, h3 {
 .company {
 	font-style: italic;
 }
+
+@media print {
+  * { font-size: 95%;	}
+}
