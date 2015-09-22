@@ -38,4 +38,5 @@ h1, #info, #updated {
 
 ul.job li.dates {
   text-align: right;
+  display: inline;
 }
