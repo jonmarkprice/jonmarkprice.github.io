@@ -11,8 +11,8 @@ ul.job li.title {
 }
 
 ul li ul {
-	list-style-type: disc;
-	padding-left: 2em;
+  list-style-type: disc;
+  padding-left: 2em;
 }
 
 #awards li {
@@ -20,7 +20,7 @@ ul li ul {
 }
 
 #contact, .title {
-	display: inline;
+  display: inline;
 }
 
 h1, #info, #updated {
@@ -28,16 +28,16 @@ h1, #info, #updated {
 }
 
 .company {
-	font-style: italic;
+  font-style: italic;
 }
-
-/* .dates {
-	display: inline;
-	padding-left: 1em;
-} */
 
 ul.job li.dates {
   /* text-align: right; */
   /* display: inline; */
-  float: left;
+  float: right;
+}
+
+body {
+  padding-left: 3em;
+  padding-right: 3em;
 }
