@@ -1,19 +1,4 @@
 body {
-	font-family: sans-serif;
-	color: #333;
-}
-
-.title {
-	font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
-}
-
-.dates {
-	font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
-}
-
-h1, h2, h3 {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 600;
+  padding-left: 3em;
+  padding-right: 3em;
 }

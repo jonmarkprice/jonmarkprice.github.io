@@ -10,13 +10,24 @@ ul.job li.title {
   font-weight: bold;
 }
 
-ul li ul {
+ul li ul, #awards ul {
   list-style-type: disc;
   padding-left: 2em;
 }
 
 #awards li {
   list-style-type: disc;
+}
+
+ul {
+  padding-left: 1em;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
 }
 
 #contact, .title {
@@ -37,7 +48,27 @@ ul.job li.dates {
   float: right;
 }
 
+#updated {
+  margin-top: 2em;
+}
+
+/* moving back to common */
 body {
-  padding-left: 3em;
-  padding-right: 3em;
+	font-family: sans-serif;
+	color: #333;
+}
+
+.title {
+	font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+
+.dates {
+	font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+
+h1, h2, h3 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
 }
