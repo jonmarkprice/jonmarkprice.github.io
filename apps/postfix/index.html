@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>CS 310: post/prefix expression evaluation</title>
+		<link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+		<h1>Post-fix Calculator</h1>
+		<p>
+			by Cindy La and Jonathan Price
+			for CS 310
+		</p>
+		<section>
+			<p>
+				The following operations are supported, all of which are binary (i.e.
+				take two operands):
+				<ul>
+					<li>+ (addition)</li>
+					<li>- (subtraction)</li>
+					<li>* (multiplication)</li>
+					<li>/ (division)</li>
+					<li>% (modulo)</li>
+					<li>^ (exponentiation)</li>
+				</ul>
+				Numbers can be negative or positive, as well as integers or decimals.
+				Scientific notation is also supported, e.g. "2.1e-3".
+				Which is 2.1 * 10^-3 or 0.0021.
+			</p>
+		</section>
+    <form onsubmit="return false">
+      <input id="textfield" type="text" autofocus />
+      <input type="submit" id="eval" value="Evaluate" />
+    </form>
+    <ol id="result"></ol>
+    <script src="parser.js"></script>
+  </body>
+</html>
