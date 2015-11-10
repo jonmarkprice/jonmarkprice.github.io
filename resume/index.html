@@ -7,10 +7,13 @@
     <link rel="stylesheet" href="print.css" media="print" />
     <link rel="icon" href="../images/favicon.ico" />
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:600,700' rel='stylesheet' type='text/css' />
+    
+    <!-- TEMP -->
+    <link href='https://fonts.googleapis.com/css?family=Lora|Open+Sans:400,400italic,600,700,800|Roboto:400,300,400italic,500|Merriweather:400,400italic,700,300italic,300' rel='stylesheet' type='text/css'>
     <title>Jonathan Price's Résumé</title>
   </head>
   <body>
-    <h1>Jonathan Price</h1>
+    <h1 id="name">Jonathan Price</h1>
     <ul id="info">
       <li id="address"> 615 W. Smith St., Kirksville, MO 63501</li>
       <li id="contact">619-500-3005 | jmp3748@truman.edu | jonathanmprice.com</li>
@@ -109,6 +112,34 @@
       </ul>
     </section>
 -->
+      
+<!--
+Making a new section called languages, it will show only languages and proficiencies
+-->
+    <h2>Programming Languages</h2>
+    <section>
+      <!-- 
+        Proficiency levels:
+        1. Most, some, dabbled
+        2. natively fluent, conversationally fluent, tourist
+        3. confident, comfortable, familiar/exposure, learning/dabbled,
+      -->
+      <!-- <h1>Programming Languages</h1> -->
+      <table>
+        <tr><th class="proficiency">Comfortable:</th><td>C, Java, JavaScript</td></tr>
+        <tr><th class="proficiency">Familiar:</th><td>PHP, Python, SQL, Unix Shell</td></tr>
+        <tr><th class="proficiency">Dabbled:</th><td>C++, Clojure, Haskell, Perl, Prolog, R, Ruby</td></tr>
+        <!-- See Dropbox/pers/data/programming_languages_list.txt -->
+      </table>
+      <!--
+      <h1>Markup &amp; Data Serialization Languages</h1>
+      <table>
+        <tr><th class="proficiency">Comfortable:</th><td>CSS3, HTML5, JSON</td></tr>
+        <tr><th class="proficiency">Familiar:</th><td>LaTeX, XML</td></tr>
+      </table>
+      -->
+    </section>
+    
     <section id="skills">
     <h2> Skills</h2>
       <ul class="fields">
@@ -124,13 +155,13 @@
             <li>Object-oriented and GUI programming with Java.</li>
             <li>Scripting with Python, Ruby, and Perl.</li>
             <!-- <li>Basic statistics with R.</li> -->
-            <li>Markup &amp; data serialization formats (JSON, XML, YAML).</li>
+            <li>Markup &amp; data serialization formats (JSON, XML).</li>
             <!--<li>Unix &amp; Linux (command line operations, installation, administration).</li>-->
             <!-- <li>Data recovery, partitioning, drive cloning.</li> -->
             <!--<li>Computer building, maintenance, and repair.</li>-->
             <li>Functional programming with Haskell &amp; Clojure.</li>
             <li>Logic programming with Prolog.</li>
-            <!--<li>Mathematics typesetting with LATEX</li>-->
+            <!--<li>Mathematics typesetting with LaTeX</li>-->
           </ul>
         </li>
         <!--

@@ -1,14 +1,37 @@
-/* header styling */
+body {
+	color: #333;
+}
+
+/** Headers **/
+section > h1 {
+  text-align: left;
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+h1#name {
+  font-weight: 600;
+}
+
+h1, #info, #updated {
+	text-align: center
+}
+
+h2, h3 {
+  margin: 0;
+}
+
 h2 + ul, ul.job, #info {
   list-style-type: none;
 }
 
-h2 {
-  text-decoration: underline;
+h1, h2, h3 {
+  font-weight: 700;
 }
 
+/** Lists **/
 ul.job li.title {
-  font-weight: bold;
+  font-weight: 600;
 }
 
 ul li ul, #awards ul {
@@ -27,49 +50,62 @@ ul {
   margin-bottom: 0.2em;
 }
 
-h2, h3 {
-  margin: 0;
-}
-
-#contact, .title {
-  display: inline;
-}
-
-h1, #info, #updated {
-	text-align: center
-}
-
-.company {
-  font-style: italic;
-}
-
 ul.job li.dates {
   /* text-align: right; */
   /* display: inline; */
   float: right;
 }
 
+/** Generic Classes & IDs **/
+#contact, .title {
+  display: inline;
+}
+
+.company {
+  font-style: italic;
+}
+
 #updated {
   margin-top: 2em;
 }
 
-/* moving back to common */
-body {
-	font-family: sans-serif;
-	color: #333;
-}
-
 .title {
-	font-family: 'Open Sans', sans-serif;
   font-weight: 700;
 }
 
 .dates {
-	font-family: 'Open Sans', sans-serif;
   font-weight: 600;
 }
 
-h1, h2, h3 {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 600;
+/** Tables **/
+th.proficiency {
+  text-align: right;
+  padding-right: 0.5em;
+  font-weight: 600;
+}
+
+table, td, th { border-collapse: collapse; }
+
+td, th {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+table {
+  margin-top: 0.25em;
+  margin-left: 1em;
+}
+
+/** Font-Family **/
+th.proficiency, #info, .dates, .company, .title, h1, h2, h3 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  font-family: 'Merriweather', serif; /* alt. Lora */
+}
+
+/** Main text **/
+li:not(.dates):not(.company):not(.title), p, tr {
+  font-size: 11pt;
 }
