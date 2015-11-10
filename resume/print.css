@@ -10,10 +10,10 @@
 /* * { font-family: serif; } */
 
 /* Adjust font sizes, put in points for easier printing */
-h1 { font-size: 20pt; }
-h2 { font-size: 12pt; }
-h3 { font-size: 10pt; }
-li { font-size: 10pt; }
+h1 { font-size: 18pt; }
+h2 { font-size: 11pt; }
+h3 { font-size: 9pt; }
+li { font-size: 9pt; }
 #updated { font-size: 9pt; }
 
 /*
@@ -21,7 +21,8 @@ section#skills {
   margin-top: 4em;
 }*/
 
+/*
 body {
   margin-left: 1em;
   margin-right: 1em;
-}
+}*/
