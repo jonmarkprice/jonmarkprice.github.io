@@ -13,9 +13,11 @@ h1#name {
   font-weight: 600;
 }
 
-h1, #info, #updated {
-	text-align: center
+#info, #updated {
+  text-align: center
 }
+
+h2 { font-size: 14pt; }
 
 h2, h3 {
   margin: 0;
@@ -63,6 +65,7 @@ ul.job li.dates {
 
 .company {
   font-style: italic;
+  padding-left: 0.5em;
 }
 
 #updated {
@@ -89,6 +92,12 @@ table, td, th { border-collapse: collapse; }
 td, th {
   padding-top: 0;
   padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 1.5em;
+}
+
+th.proficiency {
+  padding-right: 1em;
 }
 
 table {
@@ -96,8 +105,17 @@ table {
   margin-left: 1em;
 }
 
+tfoot th { 
+  font-weight: normal; 
+  /*font-style: italic;*/
+  font-size: 9pt;
+  text-align: center;  
+  margin: 0;
+  padding: 0;
+}
+
 /** Font-Family **/
-th.proficiency, #info, .dates, .company, .title, h1, h2, h3 {
+th.proficiency, tfoot th, #info, .dates, .company, .title, h1, h2, h3 {
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -105,7 +123,28 @@ body {
   font-family: 'Merriweather', serif; /* alt. Lora */
 }
 
-/** Main text **/
+/** Text **/
 li:not(.dates):not(.company):not(.title), p, tr {
-  font-size: 11pt;
+  font-size: 10pt;
+}
+
+li.dates, li.company { font-size: 11pt; }
+
+/** Sections **/
+section { 
+  border-top: 1px solid lightgrey; 
+  margin-bottom: 0.25em;
+} 
+
+#name {
+  display: inline;
+}
+
+/** Header **/
+#info {
+  float: right;
+}
+
+header {
+  margin-bottom: 0.5em;
 }

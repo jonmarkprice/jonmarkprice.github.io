@@ -4,17 +4,19 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="common.css" />
     <link rel="stylesheet" href="screen.css" media="screen" />
-    <link rel="stylesheet" href="print.css" media="print" />
+    <!-- DEPRECATED <link rel="stylesheet" href="print.css" media="print" /> -->
     <link rel="icon" href="../images/favicon.ico" />
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,700|Merriweather' rel='stylesheet' type='text/css'>
     <title>Jonathan Price's Résumé</title>
   </head>
   <body>
+    <header>
     <h1 id="name">Jonathan Price</h1>
     <ul id="info">
-      <li id="address"> 615 W. Smith St., Kirksville, MO 63501</li>
-      <li id="contact">619-500-3005 | jmp3748@truman.edu | jonathanmprice.com</li>
+      <li id="address">615 W. Smith St., Kirksville, MO 63501 | 619-500-3005</li>
+      <li id="contact">jon.mark.price@gmail.com | jonathanmprice.com</li>
     </ul>
+    </header>
 
     <section id="education">
     <h2>Education</h2>
@@ -25,6 +27,25 @@
       </ul>
     </section>
 
+    <section>
+      <h2>Programming Languages</h2>
+      <!-- 
+        Proficiency levels:
+        1. Most, some, dabbled
+        2. natively fluent, conversationally fluent, tourist
+        3. confident, comfortable, familiar/exposure, learning/dabbled,
+      -->
+      <table>
+        <tr><th class="proficiency">Comfortable:</th><td>C, Java, JavaScript</td><td>CSS3, HTML5, JSON</td></tr>
+        <tr><th class="proficiency">Familiar:</th><td>PHP, Python, SQL, Unix Shell</td><td>LaTeX, XML</td></tr>
+        <tr><th class="proficiency">Dabbled:</th><td>C++, Clojure, Haskell, Perl, Prolog, R, Ruby</td><td>SVG</td></tr>
+        <tfoot>
+          <tr><th></th><th>(Programming)</th><th>(Markup)</th></tr>
+        </tfoot>
+        <!-- See Dropbox/pers/data/programming_languages_list.txt -->
+      </table>
+    </section>
+        
     <section id="work-experience">
     <h2>Work Experience</h2>
       <ul class="job">
@@ -34,7 +55,7 @@
         <li><ul class="description">
           <li>Using Groovy-based DSL, generated Jenkins jobs to restart Informix nightly builds upon failure with a known errors.</li>
           <li>Wrote scripts to collect disk space and uptime of all Informix build nodes across six operating systems (Linux, Mac, Windows, HP-UX, AIX, and Solaris).</li>
-          <li>Designed a web dashboard to allow editing of error classification rules, and display recovery logs and node information from generated XML and JSON data.</li>
+          <li>Designed a web dashboard to allow editing of error classification rules, and to display recovery logs and node information from generated XML and JSON data.</li>
         </ul></li>
         <!--
             <li>Wrote Jenkins job restart script with logging (of recoveries) and an online (Javascript based) dashboard.</li>
@@ -46,6 +67,10 @@
           -->
       </ul>
 
+      
+      <!-- 
+        TODO: maybe collapse these into one "Research Heading" and reformat to show location which is currently too long 
+      -->
       <ul class="job">
         <li class="title">Research Assistant</li>
         <li class="dates">August 2014 - Dec 2014</li>
@@ -60,13 +85,13 @@
         <li class="title">Research Intern</li>
         <li class="dates">June 2014 - July 2014</li>
         <li class="company">Biocomplexity and High-Performance Computing REU,
-          Division of Biological Sciences, University of Missouri, Columbia</li>
+          <!--Division of Biological Sciences,--> University of Missouri, Columbia</li>
         <li><ul class="description">
-          <li>Used computational methods to research biomedical questions.</li>
+          <!-- <li>Used computational methods to research biomedical questions.</li> -->
           <li>Participated in week-long intensive training in bioinformatics.</li>
           <li>Attended seminars on faculty research  and research methodology.</li>
           <li>Studied phylogeny of grasses in tribe Paniceae.</li>
-          <li>Made and presented poster.</li>
+          <!-- <li>Made and presented poster.</li> -->
         </ul></li>
       </ul>
 
@@ -75,29 +100,25 @@
         <li class="dates">June 2013 - August 2014</li>
         <li class="company">Informatics Institute, University of Missouri, Columbia</li>
         <li><ul class="description">
+          <!--
           <li>Used computational methods to research biomedical questions.</li>
-          <li>Research focus included</li>
-          <li>Supervised Machine Learning,</li>
-          <li>Dynamic networks,</li>
-          <li>Protein-Protein interactions</li>
+          <li>Research focus included Supervised Machine Learning, dynamic networks, Protein-Protein interactions</li>
+          -->
+          <li>Modelled Protein-Protein Interaction Networks in <em>Arabidopsis</em> using dynamic networks.</li>
+          <li>Developed a mathematical framework for characterizing dynamic networks.</li>
         </ul></li>
       </ul>
-
-    <!--
       <ul class="job">
         <li class="title">Math Tutor</li>
         <li class="dates">January 2012 - May 2012</li>
         <li class="company">San Diego City College, San Diego, CA</li>
         <li><ul class="description">
-          <li>Provided one-on-one and group tutoring.</li>
-          <li>Tutored remedial and college level math (up through Calculus II).</li>
-          <li>Supplemental Instruction Tutor</li>
-          <li>Proctored exams and helped students during classwork period.</li>
-          <li>Graded homework and in-class assignments.</li>
+          <li>Provided one-on-one and group tutoring, for remedial and college level math (up through Calculus II).</li>
+          <!-- <li>Supplemental Instruction Tutor</li> -->
+          <li>Proctored exams and helped students during classwork period; Graded homework and in-class assignments.</li>
           <li>Organized and lead study groups.</li>
         </ul></li>
       </ul>
-    -->
     </section>
 
 <!--
@@ -109,58 +130,35 @@
       </ul>
     </section>
 -->
-      
-<!--
-Making a new section called languages, it will show only languages and proficiencies
--->
-    <h2>Programming Languages</h2>
-    <section>
-      <!-- 
-        Proficiency levels:
-        1. Most, some, dabbled
-        2. natively fluent, conversationally fluent, tourist
-        3. confident, comfortable, familiar/exposure, learning/dabbled,
-      -->
-      <!-- <h1>Programming Languages</h1> -->
-      <table>
-        <tr><th class="proficiency">Comfortable:</th><td>C, Java, JavaScript</td></tr>
-        <tr><th class="proficiency">Familiar:</th><td>PHP, Python, SQL, Unix Shell</td></tr>
-        <tr><th class="proficiency">Dabbled:</th><td>C++, Clojure, Haskell, Perl, Prolog, R, Ruby</td></tr>
-        <!-- See Dropbox/pers/data/programming_languages_list.txt -->
-      </table>
-      <!--
-      <h1>Markup &amp; Data Serialization Languages</h1>
-      <table>
-        <tr><th class="proficiency">Comfortable:</th><td>CSS3, HTML5, JSON</td></tr>
-        <tr><th class="proficiency">Familiar:</th><td>LaTeX, XML</td></tr>
-      </table>
-      -->
-    </section>
-    
+  
+    <!--
     <section id="skills">
     <h2> Skills</h2>
       <ul class="fields">
-        <li>
-          <h3>Computing</h3>
+        <li>-->
+          <!-- <h3>Computing</h3> -->
+          <!-- 
           <ul>
             <li>Git &amp; collaborative development.</li>
             <li>Bash scripting &amp; Unix parsing utilities (sed, awk, grep)</li>
             <li>Web design (HTML5, CSS, SVG, PHP, JavaScript).</li>
-            <!--<li>JQuery and AngularJS Javascript frameworks.</li>-->
-            <li>SQL (MySQL, SQLite, PostgreSQL).</li> <!-- PostGIS -->
             <li>C/C++ programming.</li>
             <li>Object-oriented and GUI programming with Java.</li>
             <li>Scripting with Python, Ruby, and Perl.</li>
-            <!-- <li>Basic statistics with R.</li> -->
             <li>Markup &amp; data serialization formats (JSON, XML).</li>
+            <li>Functional programming with Haskell &amp; Clojure.</li>
+            <li>Logic programming with Prolog.</li>
+          -->
+            <!--<li>Mathematics typesetting with LaTeX</li>-->
+            <!--<li>JQuery and AngularJS Javascript frameworks.</li>-->
+            <!-- <li>SQL (MySQL, SQLite, PostgreSQL).</li> <!-- PostGIS -->
+            <!-- <li>Basic statistics with R.</li> -->        
             <!--<li>Unix &amp; Linux (command line operations, installation, administration).</li>-->
             <!-- <li>Data recovery, partitioning, drive cloning.</li> -->
             <!--<li>Computer building, maintenance, and repair.</li>-->
-            <li>Functional programming with Haskell &amp; Clojure.</li>
-            <li>Logic programming with Prolog.</li>
-            <!--<li>Mathematics typesetting with LaTeX</li>-->
+          <!--
           </ul>
-        </li>
+        </li> -->
         <!--
         <li>
           <h3>Research</h3>
@@ -173,8 +171,9 @@ Making a new section called languages, it will show only languages and proficien
           </ul>
         </li>
         -->
-      </ul>
-    </section>
+      <!-- </ul>
+    </section> -->
+    
 
 <!--
     <section id="classes">
@@ -206,6 +205,6 @@ Making a new section called languages, it will show only languages and proficien
       </ul>
     </section>
 -->
-    <p id="updated">Updated 2015-10-07</P>
+    <!-- <p id="updated">Updated 2015-10-07</p> -->
   </body>
 </html>
