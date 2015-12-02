@@ -5,17 +5,16 @@ ol {
 
 li {
   font-size: 10pt;
-  font-family: sans-serif;
 }
 
 h1 {
-	font-size: 14pt;
+  font-size: 14pt;
 }
 
 .user_input {
-	font-family: monospace;
-	background-color: lightgrey;
-	margin-right: 1em;
-	padding-left: 0.5em;
-	padding-right: 0.5em;
+  font-family: monospace;
+  background-color: lightgrey;
+  margin-right: 1em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
