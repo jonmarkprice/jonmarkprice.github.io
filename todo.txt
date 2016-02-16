@@ -1,6 +1,0 @@
-TODO
-- [ ] set this file to be untracked in .gitignore
-- [ ] make several versions of resume, using js, php (includes), stylesheets
-  - [ ] one page (no classes)
-  - [ ] full (current)
-- [ ] test PHP in github pages
