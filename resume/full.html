@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="common.css" />
     <link rel="stylesheet" href="screen.css" media="screen" />
+    <link rel="stylesheet" href="print.css" media="print" />
     <link rel="icon" href="../images/favicon.ico" />
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,700|Merriweather' rel='stylesheet' type='text/css'>
     <title>Jonathan Price's Résumé</title>
@@ -129,7 +130,7 @@
       </ul>
     </section>
     
-    <section>
+    <section id="programming-languages">
       <h2>Programming Languages</h2>
       <!-- 
         Proficiency levels:
@@ -167,34 +168,35 @@
       </table>
     </section>
 
-    <section id="awards">
-    <h2>Awards</h2>
-      <ul>
-        <li>Boeing Company Foundation Scholarship (2015-2016 Academic Year)</li>
-        <li>NSF Math &amp; Computer Science Scholarship (2015-2016 Academic Year)</li>
-      </ul>
-    </section>
-
     <section id="skills">
     <h2>Skills</h2>
       <ul class="fields">
         <li>
           <h3>Computing</h3>
+          <!--
+            IDEA: move language / buzzword to beginning of line, e. g.
+            "Object-oriented and GUI programming with Java."
+            becomes
+            "Java: Object-oriented and GUI programming"
+          -->
           <ul>
             <li>Git &amp; collaborative development.</li>
-            <li>Bash scripting &amp; Unix parsing utilities (sed, awk, grep)</li>
-            <li>Web design (HTML5, CSS, SVG, PHP, JavaScript).</li>
-            <li>C/C++ programming.</li>
-            <li>Object-oriented and GUI programming with Java.</li>
+            <li>Data Analysis and Statistics with R.</li>
             <li>Scripting with Python, Ruby, and Perl.</li>
-            <!-- <li>XML</li> -->
+            <li>Unix scripting &amp; parsing utilities (sed, awk, grep)
+            </li>
+            <!-- 
+               <li>Unix &amp; Linux (command line operations, installation, administration).</li>
+            -->
+            <li>Web design (HTML5, CSS, SVG, PHP, JavaScript).</li>
+            <li>Object-oriented and GUI programming with Java.</li>
+            <li>C/C++ programming.</li>
+            <li>Database &amp; SQL (MySQL, SQLite, PostgreSQL).</li>
+            <li>XML parsing and generation.</li>
             <li>Functional programming with Haskell &amp; Clojure.</li>
             <li>Logic programming with Prolog.</li>
             <li>Mathematics typesetting with LaTeX</li>
             <!--<li>JQuery and AngularJS Javascript frameworks.</li>-->
-            <li>SQL (MySQL, SQLite, PostgreSQL).</li>
-            <li>Data Analysis and Statistics with R.</li>
-            <li>Unix &amp; Linux (command line operations, installation, administration).</li>
             <li>Data recovery, partitioning, drive cloning.</li>
             <li>Computer building, maintenance, and repair.</li>
           </ul>
@@ -208,6 +210,16 @@
             <li>Supervised Machine Learning</li>
           </ul>
         </li>
+      </ul>
+    </section>
+    
+   <section id="awards">
+    <h2>Awards</h2>
+      <ul>
+        <li>Boeing Company Foundation Scholarship (2015-2016 Academic Year)</li>
+        <li>NSF Math &amp; Computer Science Scholarship (2015-2016 Academic Year)</li>
+        <li>SMaCS Scholarship (2015-2016 Academic Year)</li>
+        <li>President's List (4.0 GPA) (Fall 2015)</li>
       </ul>
     </section>
   </body>
