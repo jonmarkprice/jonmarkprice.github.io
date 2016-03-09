@@ -1,5 +1,5 @@
 body {
-	color: #333;
+  color: #333;
 }
 
 /** Headers **/
@@ -133,7 +133,7 @@ li.dates, li.company { font-size: 11pt; }
 section { 
   border-top: 1px solid lightgrey; 
   margin-bottom: 0.25em;
-} 
+}
 
 #name {
   display: inline;
