@@ -1,0 +1,27 @@
+body {
+  margin: 1em;
+  margin-left: 2em;
+  margin-left: 2em;
+}
+
+/* Font sizes */
+h1 { font-size: 1.8em; }
+h2 { font-size: 1.2em; }
+h3 { font-size: 1.0em; }
+
+li, p, tr {
+  font-size: 1.0em;
+}
+
+li.title, li.dates, li.company { 
+  font-size: 1.0em;
+}
+
+#info {
+  font-size: 0.9em
+}
+
+/* */
+section {
+  border-top: 1px solid lightgrey;
+}

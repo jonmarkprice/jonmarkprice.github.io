@@ -2,15 +2,38 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="common.css" />
-    <link rel="stylesheet" href="screen.css" media="screen" />
+    <!-- MERGING print.css into common:
     <link rel="stylesheet" href="print.css" media="print" />
+    -->
+    <!--
+    <link href='https://fonts.googleapis.com/css?family=Lora:400|Neuton:800' 
+    rel='stylesheet' type='text/css' /> -->
+    <!--
+    <link href='https://fonts.googleapis.com/css?family=Judson:400|Work+Sans:600' 
+    rel='stylesheet' type='text/css' /> -->
     <link rel="icon" href="../images/favicon.ico" />
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,700|Merriweather' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:500|Open+Sans:400,400italic,600' 
+          rel='stylesheet' type='text/css' />
     <title>Jonathan Price's Résumé</title>
-    <link rel="stylesheet" href="columns.css" />
+    
+    <!-- common stylesheets -->
+    <link rel="stylesheet" href="style/columns.css" />
+    <link rel="stylesheet" href="style/fonts.css" />
+    <link rel="stylesheet" href="style/header.css" />
+    <link rel="stylesheet" href="style/common.css" />
+    <link rel="stylesheet" href="style/printing.css" media="print" />
+    
+    <!-- only for web version -->
+    <link rel="stylesheet" href="style/web.css" media="screen" />
+    
+    <!-- only for printing preview -->
+    <!--
+    <link rel="stylesheet" href="style/print-preview.css" 
+          media="screen" />
+    -->
   </head>
   <body>
+  <div id="page">
     <header>
     <h1 id="name">Jonathan Price</h1>
     <ul id="info">
@@ -25,34 +48,37 @@
   <li>
   <h3>Proficient:</h3>
     <ul class="skills_inline">
-      <li>Git and collaborative development</li>
+      <li>Git &amp; collaborative development</li>
       <li>Continuous Integration with Jenkins</li>
-      <li>Object-oriented and GUI programming with Java</li>
+      <li>Object-oriented <!-- &amp; GUI--> programming with Java</li>
       <li>C Programming</li>
-      <li>Unix scripting and parsing utilities (sed, awk, grep)</li>
-      <!-- <li>Unix and Linux (command-line operations, installation, administration).</li> -->
-      <li>Web application development and design 
+      <!-- <li>Unix scripting &amp; parsing utilities (sed, awk, grep)</li> -->
+      <!-- <li>Unix &amp; Linux (comm&amp;-line operations, installation, administration).</li> -->
+      <li>Web application development &amp; design 
           (JavaScript, PHP, HTML5, CSS, XML)</li>
       <!-- <li>Web design (HTML5, CSS, SVG)</li> -->
-      <li>Database Management and SQL (PostgreSQL, MySQL, SQLite)</li>
-      <li>Data Analysis and Statistics with R</li>
-      <!-- AJAX and XML and JSON parsing --><!-- added XML in web -->
+      <li>Database Management &amp; SQL (PostgreSQL, MySQL, SQLite)</li>
+      <li>Unix shell scripting, system administration 
+        &amp; parsing utilities (sed, awk)
+      </li>
+      <li>Data Analysis &amp; Statistics with R</li>
+      <!-- AJAX &amp; XML &amp; JSON parsing --><!-- added XML in web -->
     </ul>
   </li>
   <li>
   <h3>Learning:</h3>
     <ul class="skills_inline">
       <li>Unit testing with QUnit</li>
-      <li>Scripting with Python, Unix shell, Perl, and Groovy</li>
+      <li>Scripting with Python, Perl, &amp; Groovy</li>
       <li>Functional programming (Haskell, Clojure)</li>
       <li>Logic programming with Prolog</li>
-      <li>C++</li>
+      <li>Ada &amp; C++</li>
     </ul>
   </li>
     <!--
       <li>Mathematics typesetting with LaTeX</li>
       <li>Data recovery, partitioning, drive cloning.</li>
-      <li>Computer building, maintenance, and repair.</li>
+      <li>Computer building, maintenance, &amp; repair.</li>
     -->
 </ul>
 </section>
@@ -61,7 +87,8 @@
       <ul>
         <li>Bachelors of Science in Computer Science, Truman State University</li>
         <li>Expected Graduation Date: May 2016</li>
-        <li>Cumulative GPA (Truman): 3.95 / 4.00; Cumulative GPA (all schools): 3.43 / 4.00</li>
+        <li>Cumulative Institutional GPA: 3.95 / 4.00;
+            Overall GPA (including transfer credits): 3.43 / 4.00</li>
       </ul>
     </section>
     <section id="work-experience">
@@ -70,11 +97,40 @@
         <li class="title">Software Developer Intern</li>
         <li class="company">IBM, Lenexa, Kansas</li>
         <!--Informix DevOps -->
-        <li class="dates">May 2015 - August 2015</li>
+        <li class="dates">5/2015 - 8/2015</li>
         <li><ul class="description">
-          <li>Using Groovy-based DSL, generated Jenkins jobs to restart Informix nightly builds upon failure with a known errors.</li>
-          <li>Wrote scripts to collect disk space and uptime of all Informix build nodes across six operating systems (Linux, Mac, Windows, HP-UX, AIX, and Solaris).</li>
-          <li>Designed an online dashboard to allow editing of error classification rules, and to display recovery logs and node information from generated XML and JSON data.</li>
+          <li>            
+            Analyzed archives of daily build status emails and 
+            identified classes of errors likely to be resolvable 
+            without human intervention.
+          </li>
+        
+          <!-- DEPRECATED
+            Using Groovy-based DSL, generated Jenkins jobs to restart 
+            Informix nightly builds upon failure with a known errors.
+          -->
+          
+          <li>
+            Generated Jenkins jobs to identify automatically resolvable 
+            build errors and restart the appropriate builds.
+          </li>
+          
+          <!-- DEPRECATED
+            Generated Jenkins jobs to automatically restart failed Informix 
+            nightly builds
+          -->
+          
+          <li>
+            Wrote scripts to aggregate disk space and uptime of all 
+            Unix build machines across five operating systems (Linux, 
+            Mac, HP-UX, AIX, and Solaris).
+          </li>
+          
+          <li>
+            Designed an online dashboard to enable editing of error 
+            classification rules and display recovery logs and build 
+            node information from generated XML and JSON data.
+          </li>
         </ul></li>
         <!--
             <li>Wrote Jenkins job restart script with logging (of recoveries) and an online (Javascript based) dashboard.</li>
@@ -92,11 +148,15 @@
       <ul class="job">
         <li class="title">Research Assistant</li>
         <li class="company"><!--Center for Geospatial Intelligence, -->University of Missouri, Columbia</li>
-        <li class="dates">August 2014 - December 2014</li>
+        <li class="dates">8/2014 - 12/2014</li>
         <li><ul class="description">
           <!-- TODO: start with strong verb -->
           <!-- <li>NSF CAREER Grant: Supervised Learning for Incomplete and Uncertain Data</li> -->
-          <li>Prototyped a web application to crowd-source collection of labels for multispectral satellite imagery to serve as ground-truth data for a Supervised Learning algorithm.</li>
+          <li>
+            Prototyped a web application to crowd-source the collection 
+            of labels for multispectral satellite imagery to serve as 
+            ground-truth data for the a supervised learning algorithm.
+          </li>
         </ul></li>
       </ul>
 
@@ -104,15 +164,15 @@
         <li class="title">Research Intern</li>
         <li class="company"><!--Biocomplexity and High-Performance Computing REU, -->
           <!--Division of Biological Sciences, -->University of Missouri, Columbia</li>
-          <li class="dates">June 2014 - July 2014</li>
+          <li class="dates">6/2014 - 7/2014</li>
           <li><ul class="description">
           <li>
             Participated in week-long intensive training in 
             bioinformatics and high-performance computing.
           </li>
           <li>
-            Collaborated with a biology student to develop a method to
-            analyze tuples of syntenic genes in the grass tribe
+            Collaborated with a biology student to develop a method to 
+            analyze tuples of syntenic genes <!--in the grass tribe--> 
             <em>Paniceae</em>.
           </li>
           <li>
@@ -130,21 +190,27 @@
       <ul class="job">
         <li class="title">Research Assistant</li>
         <li class="company"><!--Informatics Institute, -->University of Missouri, Columbia</li>
-        <li class="dates">June 2013 - August 2014</li>
+        <li class="dates">6/2013 - 8/2014</li>
         <li><ul class="description">
           <!--
           <li>Used computational methods to research biomedical questions.</li>
           <li>Research focus included Supervised Machine Learning, dynamic networks, Protein-Protein interactions</li>
           -->
-          <li>Modelled Protein-Protein Interaction Networks in <em>Arabidopsis</em> using dynamic networks.</li>
-          <li>Developed a mathematical framework for characterizing dynamic networks.</li>
+          <li>
+            Modelled Protein-Protein Interaction Networks in 
+            <em>Arabidopsis</em> using dynamic networks.
+          </li>
+          <li>
+            Developed a mathematical framework for characterizing 
+            dynamic networks.
+          </li>
         </ul></li>
       </ul>
       
       <ul class="job">
         <li class="title">Math Tutor</li>
         <li class="company">University of Missouri, Columbia</li>
-        <li class="dates">August 2013 - December 2013</li>
+        <li class="dates">8/2013 - 12/2013</li>
         <li>
           <ul class="description">
             <li>Tutored Calculus one-on-one by appointment.</li>
@@ -155,7 +221,7 @@
       <ul class="job">
         <li class="title">Math Tutor</li>
         <li class="company">San Diego City College<!--, San Diego--></li>
-        <li class="dates">January 2012 - May 2012</li>
+        <li class="dates">1/2012 - 5/2012</li>
         <li><ul class="description">
           <li>Provided one-on-one and group tutoring, for remedial and college level math (up through Calculus II).</li>
           <!-- <li>Supplemental Instruction Tutor</li> -->
@@ -174,5 +240,6 @@
         <li>President's List (4.0 GPA) (Fall 2015)</li>
       </ul>
     </section>
+  </div>
   </body>
 </html>
