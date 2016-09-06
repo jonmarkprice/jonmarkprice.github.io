@@ -29,7 +29,7 @@ section > h1 {
 }
 
 /** Lists **/
-ul li ul, #awards ul {
+ul li ul {
   list-style-type: disc;
   padding-left: 2em;
 }
@@ -45,20 +45,6 @@ ul {
   margin-bottom: 0.2em;
 }
 
-ul.job li.dates {
-  /* text-align: right; */
-  /* display: inline; */
-  float: right;
-}
-
-/** Generic Classes & IDs **/
-#contact, .title, .company {
-  display: inline;
-}
-
-.company {
-  padding-left: 0.5em;
-}
 
 /** Sections **/
 section {
@@ -69,6 +55,55 @@ section {
 
 h2 {padding-bottom: 0.05in;}
 
-ul.job {
-  margin-bottom: 0.1in;
+/** Classes & IDs **/
+#contact, .title, .company {
+  float: left;
 }
+
+.company {
+  padding-left: 0.5em;
+}
+
+.line {
+  border-bottom: 1pt dotted grey;
+  height: 0.8em;  
+}
+
+.dates {
+  float: right;
+}
+
+.description {
+  clear: both;
+}
+
+ul.job {
+  margin-bottom: 0.05in;
+}
+
+.title, .company, .dates, .award{
+  background-color: white;
+}
+
+.company, .award {
+  padding-right: 0.7em;
+}
+
+.dates {
+  padding-left: 0.7em;
+}
+
+#awards div.dates {
+  /* clear: both; */
+}
+
+#awards div.award {
+  float: left;
+}
+
+#awards li {
+  list-style-type: none;
+  clear: both;
+}
+
+
