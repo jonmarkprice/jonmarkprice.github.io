@@ -16,9 +16,5 @@ li.title, li.dates, li.company {
   font-size: 10pt;
 }
 
-/* To handle margins in print version */
-/* print from chrome using Margins: none */
-body {
-  margin: 0.5in;
-  margin-top: 0.3in;
-}
+body { margin: 0; }
+
