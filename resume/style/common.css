@@ -1,16 +1,7 @@
 /* Resume stysheet for printing */
 /* TODO: current style sheet is set for all media, but uses pts and in
  * as well as em. Need to make consistent.
-/*
-section#skills {
-  margin-top: 4em;
-}*/
-
-/*
-body {
-  margin-left: 1em;
-  margin-right: 1em;
-}*/
+ */
 
 h2, h3 {
   margin: 0;
@@ -78,7 +69,7 @@ h2 {padding-bottom: 0.05in;}
 }
 
 ul.job {
-  margin-bottom: 0.05in;
+  margin-bottom: 0.03in;
 }
 
 .title, .company, .dates, .award{
@@ -91,10 +82,6 @@ ul.job {
 
 .dates {
   padding-left: 0.7em;
-}
-
-#awards div.dates {
-  /* clear: both; */
 }
 
 #awards div.award {

@@ -19,7 +19,7 @@ section {
   border-top: 1px solid lightgrey;
 }
 
-main#page {
+#page {
   /* border: solid 1px grey; */
   padding-left: 2em;
   padding-bottom: 2em;

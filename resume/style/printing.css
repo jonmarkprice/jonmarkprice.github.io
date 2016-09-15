@@ -20,4 +20,5 @@ li.title, li.dates, li.company {
 /* print from chrome using Margins: none */
 body {
   margin: 0.5in;
+  margin-top: 0.3in;
 }
