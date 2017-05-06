@@ -18,7 +18,9 @@
           dataType: 'json', // type of file (text, json, xml, etc)
           success: function(data) { // callback for successful completion
             //alert(data);
-            $("#msg").html(data['message'].toString());
+            var x = JSON.parse(data);
+            alert(x);
+            $("#msg").html(x['message']);
           },
           error: function() { // callback if there's an error
             alert("error");
