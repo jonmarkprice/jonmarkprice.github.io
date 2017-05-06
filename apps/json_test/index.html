@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p id="msg"></p>
+    <script>
+      var req = new XMLHttpRequest();
+      req.open('GET', 'http://jonmarkprice.github.io/jonmarkprice.github.io/apps/data.json', false);
+      req.send()
+    
+      document.getElementById('msg').textContent = req.responseText;
+    </script>
+  </body>
+</html>
