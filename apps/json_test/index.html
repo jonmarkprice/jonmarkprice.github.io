@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  </head>
   <body>
     <p id="msg"></p>
     <script>
-      var req = new XMLHttpRequest();
-      req.open('GET', 'https://jonmarkprice.github.io/jonmarkprice.github.io/apps/json_test/data.json', false);
-      req.send()
-    
-      document.getElementById('msg').textContent = req.responseText;
+      // WITHOUT JQUERY
+      //var req = new XMLHttpRequest();
+      //req.open('GET', 'https://jonmarkprice.github.io/jonmarkprice.github.io/apps/json_test/data.json', false);
+      //req.send()
+      //document.getElementById('msg').textContent = req.responseText;
+      
+      $(document).ready(function(){
+        $.ajax({
+          url: 'data.json', // path to file
+          dataType: 'json', // type of file (text, json, xml, etc)
+          success: function(data) { // callback for successful completion
+            $("#msg").html(data);
+          },
+          error: function() { // callback if there's an error
+            alert("error");
+          }
+        });     
+      });
     </script>
   </body>
 </html>
