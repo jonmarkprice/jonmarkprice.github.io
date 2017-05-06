@@ -4,7 +4,7 @@
     <p id="msg"></p>
     <script>
       var req = new XMLHttpRequest();
-      req.open('GET', 'http://jonmarkprice.github.io/jonmarkprice.github.io/apps/data.json', false);
+      req.open('GET', 'https://jonmarkprice.github.io/jonmarkprice.github.io/apps/json_test/data.json', false);
       req.send()
     
       document.getElementById('msg').textContent = req.responseText;
