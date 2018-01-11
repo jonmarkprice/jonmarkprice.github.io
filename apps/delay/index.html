@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Timing test</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Delay tester</h1>
+    <p>
+      This is a simple tool for experimenting with how various millisecond
+      delays feel in a user interface in order help setting performance goals.
+    </p>
+
+    <button id="clear">Clear delays</button>
+    <button id="reset">Reset all delays</button>
+
+    <form id="add-entry">
+      <label for="input">Delay in milliseconds</label>
+      <input type="text"   id="input" width="5" />
+      <input type="submit" id="add"   value="Add" />
+    </form>
+
+    <table id="entries">
+      <tr>
+        <th></th>
+        <th>Delay (ms.)</th>
+        <th>Status</th>
+      </tr>
+    </table>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+
+table, td, tr, th {
+  border: thin solid lightgrey;
+  border-collapse: collapse;
+}
+
+td, th {
+  padding: 1mm;
+  min-width: 25mm;
+  font-size: small;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+th {
+  font-size: small;
+}
+
+h1 {
+  font-size: large;
+}
